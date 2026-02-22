@@ -1,29 +1,47 @@
 window {
     margin: 0px;
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    background-color: rgba(10, 10, 10, 0.95);
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.1);
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(20, 20, 25, 0.85);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
-    opacity: 1;
 }
 
+
 #input {
-    margin: 12px;
-    border-radius: 8px;
-    padding: 10px 14px;
+    margin: 15px;
+    padding: 12px 16px;
+    border-radius: 12px;
     border: none;
-    background-color: rgba(20, 20, 20, 0.8);
-    color: #ff4d4d;
-    font-weight: 600;
-    text-shadow: 0 0 4px rgba(255, 0, 0, 0.7);
+    background-color: rgba(40, 40, 50, 0.9);
+    color: #e6e6e6;
+    font-weight: 500;
 }
 
 #input:focus {
-    outline: 1px solid #ff0000;
-    background-color: rgba(30, 30, 30, 0.9);
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    outline: none;
+    background-color: rgba(60, 60, 75, 0.95);
+    box-shadow: 0 0 0 2px rgba(120, 120, 255, 0.4);
+}
+
+
+#entry {
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #cccccc;
+    background-color: transparent;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#entry:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#entry:selected {
+    background-color: rgba(120, 120, 255, 0.15);
+    color: #ffffff;
 }
 
 #inner-box {
@@ -39,21 +57,7 @@ window {
     margin: 0px;
 }
 
-#entry {
-    padding: 10px 16px;
-    border-radius: 8px;
-    color: #cccccc;
-    background-color: transparent;
-    transition: all 0.15s ease;
-}
-
-#entry:selected {
-    background-color: rgba(255, 0, 0, 0.15);
-    color: #ff0000;
-    text-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
-}
-
 #text {
     font-size: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
